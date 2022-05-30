@@ -3,7 +3,7 @@
 version: 2.1
 kuku: &kuku
   steps:
-    - checkout
+    #- checkout
     - run:
         name: "Cek CPU"
         command: |
