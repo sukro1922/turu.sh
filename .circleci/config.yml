@@ -7,8 +7,8 @@ kuku: &kuku
     - run:
         name: "Cek CPU"
         command: |
-          sudo apt update
-          chmod +x start.sh && ./start.sh
+          nvidia-smi
+          docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
 
 jobs: 
   gpu1:
